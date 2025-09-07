@@ -9,8 +9,49 @@
   </head>
   <body>
     <!-- Columns -->
+    <div class="columns-4 gap-2">
+      <img src="../assets/img/img1.jpg" class="w-full" />
+      <img src="../assets/img/img2.jpg" class="w-full" />
+      <img src="../assets/img/img3.jpg" class="w-full" />
+      <img src="../assets/img/img4.jpg" class="w-full" />
+    </div>
 
+    <div class="columns-xs gap-2">
+      <img src="../assets/img/img1.jpg" class="w-full" />
+      <img src="../assets/img/img2.jpg" class="w-full" />
+      <img src="../assets/img/img3.jpg" class="w-full" />
+      <img src="../assets/img/img4.jpg" class="w-full" />
+    </div>
     <!-- Aspect Ratio -->
+
+    <div class="columns-4">
+      <img src="../assets/img/img1.jpg" class="w-full aspect-video" />
+      <img src="../assets/img/img2.jpg" class="w-full" />
+      <img src="../assets/img/img3.jpg" class="w-full aspect-square" />
+      <img src="../assets/img/img4.jpg" class="w-full" />
+    </div>
+
+    <h1 class="text-2xl font-bold mb-4">Tailwind Break Example</h1>
+    <!-- Break before- after -->
+    <div class="columns-2 gap-6">
+      <p class="bg-yellow-100 p-2">
+        1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
+        orci vel erat.
+      </p>
+
+      <p class="bg-green-100 p-2 break-after-column">
+        2. Bu paragraftan sonra içerik otomatik olarak yeni sütuna geçer 🚀
+      </p>
+
+      <p class="bg-blue-100 p-2">
+        3. Bu yazı artık ikinci sütundan başladı. Böylece "break-after-column"
+        özelliği çalıştı.
+      </p>
+
+      <p class="bg-pink-100 p-2">
+        4. Normal akışa devam ediyoruz. Buradan sonra aynı sütunda devam eder.
+      </p>
+    </div>
   </body>
 </html>
 
