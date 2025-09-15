@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  /* Breakpoints */
+  --breakpoint-sm: 30rem; /* 480px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 61rem; /* 976px */
+  --breakpoint-xl: 90rem; /* 1440px */
+
+  /* Colors */
+  --color-strong-cyan: hsl(171 66% 44%);
+  --color-light-blue: hsl(233 100% 69%);
+  --color-dark-grayish-blue: hsl(210 10% 33%);
+  --color-grayish-blue: hsl(201 11% 66%);
+
+  /* Font Family */
+  --font-sans: "Bai Jamjuree", sans-serif;
+}
+
+/* Normal body stili */
+body {
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Ekran 576px ve altı için mobil arka plan */
+@media (max-width: 576px) {
+  body {
+    background-image: url("../images/bg-header-mobile.png");
+  }
+}
