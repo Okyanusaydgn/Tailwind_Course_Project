@@ -103,3 +103,32 @@ A clean product detail / purchase card built with **Tailwind CSS**.
 <p align="center">
   <img src="Pictures/Tailwind-Minis/product-modal.png" width="650" style="object-fit:cover;" />
 </p>
+
+---
+# 🌐 Website Projects
+
+## 1) Clipboard – Landing Page
+
+A clean landing page built with **Tailwind CSS v4**.
+
+**Highlights**
+- Responsive hero (desktop/mobile background image)
+- Custom theme via `@theme` (breakpoints, colors, font)
+- Reusable utilities with `@layer` (`.section-container`, `.button-container`, `h3` base)
+- Features section (image + details), Access Anywhere, Supercharge cards
+- References (logo strip) & Footer with social icon hover filter
+
+**Tech**
+- Tailwind CSS v4, Google Fonts (Bai Jamjuree), pure HTML
+
+**📂 Folder Path**  
+`website-projects/clipboard`
+
+**🔗 Live Demo**  
+[Clipboard-Project](shiny-toffee-ca1208.netlify.app)
+
+**🖼️ Preview**
+<p align="center">
+  <img src="Pictures/Tailwind-Minis/clipboard-1.png" width="650" style="object-fit:cover;" />
+  <img src="Pictures/Tailwind-Minis/clipboard-2.png" width="650" style="object-fit:cover;" />
+</p>
