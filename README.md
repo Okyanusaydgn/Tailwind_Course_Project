@@ -129,6 +129,8 @@ A clean landing page built with **Tailwind CSS v4**.
 
 **🖼️ Preview**
 <p align="center">
-  <img src="Pictures/Tailwind-Minis/clipboard-1.png" width="650" style="object-fit:cover;" />
-  <img src="Pictures/Tailwind-Minis/clipboard-2.png" width="650" style="object-fit:cover;" />
+  <img src="Pictures/Tailwind-Minis/clipboard-1.png" alt="Clipboard preview 1" width="49%" style="display:inline-block; margin:0 .5rem;" />
+  <img src="Pictures/Tailwind-Minis/clipboard-2.png" alt="Clipboard preview 2" width="49%" style="display:inline-block; margin:0 .5rem;" />
 </p>
+
+---
