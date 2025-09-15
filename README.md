@@ -1,9 +1,12 @@
-## 🎨 Tailwind CSS Mini Projects
+# 🎨 Tailwind CSS Projects
 
-This section showcases a collection of small, hands-on projects built with **Tailwind CSS**.  
-Each mini project focuses on practicing the utility-first workflow and building responsive, modern interfaces.
+This repository contains a growing collection of projects built with **Tailwind CSS**.  
+The goal is to practice the utility-first workflow while designing responsive, modern user interfaces.
 
 ---
+
+## 🪴 Mini Projects
+These small, hands-on projects focus on mastering Tailwind fundamentals,  including layout techniques, responsive design, and hover/transition effects.
 
 ### 1️⃣ Email Subscribe Card
 
