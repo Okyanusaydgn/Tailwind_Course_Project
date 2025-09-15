@@ -125,7 +125,7 @@ A clean landing page built with **Tailwind CSS v4**.
 `website-projects/clipboard`
 
 **🔗 Live Demo**  
-[Clipboard-Project](shiny-toffee-ca1208.netlify.app)
+[Clipboard-Project](https://shiny-toffee-ca1208.netlify.app)
 
 **🖼️ Preview**
 <p align="center">
