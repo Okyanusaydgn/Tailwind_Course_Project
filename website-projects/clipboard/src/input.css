@@ -25,7 +25,7 @@
 /* Bileşen sınıfları → components */
 @layer components {
   .section-container {
-    @apply max-w-6xl mx-auto text-center;
+    @apply max-w-6xl mx-auto text-center px-10;
   }
 
   .button-container {
