@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  /* Breakpoints */
+  --breakpoint-sm: 30rem; /* 480px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 61rem; /* 976px */
+  --breakpoint-xl: 90rem; /* 1440px */
+
+  /* Fonts */
+  --font-sans: "Josefin Sans", sans-serif;
+  --font-alata: "Alata", sans-serif;
+}
+
+@layer components {
+  /* Desktop */
+  #hero {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Mobile - 576px ve altı  */
+  @media (max-width: 36rem) {
+    #hero {
+      background-image: url("../images/mobile/image-hero.jpg");
+      background-position: center;
+    }
+  }
+}
