@@ -1,0 +1,12 @@
+{
+  "name": "shortly",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.min.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.13",
+    "@tailwindcss/cli": "^4.1.13"
+  }
+}
