@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Breakpoint */
+  --breakpoint-sm: 30rem; /* 480px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 61rem; /* 976px */
+  --breakpoint-xl: 90rem; /* 1440px */
+
+  /* Font Family */
+  --font-raleway: "Raleway", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+
+  /* Colors */
+  --color-dark-blue: hsl(217 28% 15%);
+  --color-dark-blue1: hsl(218 28% 13%);
+  --color-dark-blue2: hsl(216 53% 9%);
+  --color-dark-blue3: hsl(219 30% 18%);
+  --color-accent-cyan: hsl(176 68% 64%);
+  --color-accent-blue: hsl(198 60% 50%);
+  --color-light-red: hsl(0 100% 63%);
+
+  /* Background Image */
+  --logo-dark: url("../images/logo-dark-mode.svg");
+  --logo-light: url("../images/logo-light-mode.svg");
+  --curvy-light: url("../images/bg-curvy-light-mode.svg");
+  --curvy-dark: url("../images/bg-curvy-dark-mode.svg");
+}
+
+@layer utilities {
+  .bg-logo-light {
+    background-image: var(--logo-light);
+  }
+  .bg-logo-dark {
+    background-image: var(--logo-dark);
+  }
+  .bg-curvy-light {
+    background-image: var(--curvy-light);
+  }
+  .bg-curvy-dark {
+    background-image: var(--curvy-dark);
+  }
+}

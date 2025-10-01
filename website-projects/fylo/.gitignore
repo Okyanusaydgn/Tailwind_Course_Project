@@ -1,0 +1,7 @@
+# bağımlılıklar
+node_modules/
+
+# derlenmiş çıktılar
+dist/
+*.log
+.DS_Store
