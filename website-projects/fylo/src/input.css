@@ -42,3 +42,14 @@
     background-image: var(--curvy-dark);
   }
 }
+
+@layer components {
+  .ficon {
+    transition: filter 0.2s ease, transform 0.2s ease;
+  }
+  .ficon:hover {
+    filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg)
+      brightness(105%) contrast(104%);
+    transform: translateY(-2px);
+  }
+}
