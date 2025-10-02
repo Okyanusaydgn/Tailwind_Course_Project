@@ -49,5 +49,58 @@
         </div>
       </div>
     </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Container For Image & Content -->
+      <div
+        class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0"
+      >
+        <!-- Content -->
+        <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+          <h1
+            class="text-3xl lg:text-6xl font-semibold leading-tight text-center lg:text-left"
+          >
+            A Simple Bookmark Manager
+          </h1>
+          <p
+            class="max-w-md lg:max-w-xl mx-auto lg:mx-0 text-lg lg:text-2xl text-center lg:text-left text-gray-400"
+          >
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+
+          <!-- Buttons Container -->
+          <div
+            class="flex items-center justify-center w-full space-x-4 lg:justify-start"
+          >
+            <a
+              href="#"
+              class="p-4 text-sm md:text-base font-semibold rounded border-2 shadow-md bg-soft-blue text-white border-soft-blue transition-colors transition-transform duration-200 hover:bg-white hover:text-soft-blue hover:-translate-y-0.5 active:translate-y-0"
+              >Get It On Chrome</a
+            >
+
+            <a
+              href="#"
+              class="p-4 text-sm md:text-base font-semibold rounded border-2 shadow-md bg-gray-400 text-black border-gray-300 transition-colors transition-transform duration-200 hover:bg-white hover:text-gray-600 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-400/60"
+              >Get It On Firefox</a
+            >
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+          <div
+            class="bg-hero hidden lg:block absolute -z-10 rounded-l-full top-52 w-[2000px] h-[300px] left-[30%] bg-soft-blue"
+          ></div>
+          <img
+            src="images/illustration-hero.svg"
+            alt=""
+            class="relative z-10 lg:top-24 xl:top-0 will-change-transform motion-safe:animate-[float_3s_ease-in-out_infinite]"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>

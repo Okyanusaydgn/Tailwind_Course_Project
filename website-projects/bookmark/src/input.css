@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+/* Floating image animation (hero) */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  } /* increase to -12px if you want more motion */
+}
+
+/* Respect users who prefer reduced motion (optional if you use `motion-safe:`) */
+@media (prefers-reduced-motion: reduce) {
+  /* Works only if the element has class="animate-float" */
+  .animate-float {
+    animation: none !important;
+  }
+}
+
+/* Design tokens (Tailwind v4) */
 @theme {
   /* Breakpoints (px → rem) */
   --breakpoint-sm: 30rem; /* 480px */
@@ -17,30 +37,48 @@
   --font-sans: "Rubik", sans-serif;
 }
 
+/* Project utilities/components */
 @layer utilities {
+  /* Blue pill shape behind hero illustration */
+  .bg-hero {
+    @apply absolute rounded-l-full;
+  }
+
+  /* Show pill only on large screens with custom size/pos */
+  @media (min-width: 1020px) {
+    .bg-hero {
+      width: 2000px;
+      height: 300px;
+      left: 30%;
+      @apply top-52 bg-soft-blue;
+    }
+  }
+
+  /* Nav link with animated underline */
   .link-underline {
     @apply relative transition-colors duration-200;
   }
-
   .link-underline::after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -0.25rem;
+    bottom: -0.25rem; /* underline offset */
     height: 2px;
     transform: scaleX(0);
     transform-origin: left;
     background-color: var(--color-soft-red, currentColor);
     transition: transform 0.25s ease;
   }
-
   .link-underline:hover::after,
   .link-underline:focus-visible::after {
-    transform: scaleX(1);
+    transform: scaleX(1); /* reveal underline from left to right */
   }
 
+  /* Primary button base styles (color/transform transitions + focus ring) */
   .btn-primary {
-    @apply px-8 py-2 rounded-lg border-2 shadow-md transition-colors transition-transform duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+    @apply px-8 py-2 rounded-lg border-2 shadow-md
+           transition-colors transition-transform duration-200
+           focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
   }
 }
