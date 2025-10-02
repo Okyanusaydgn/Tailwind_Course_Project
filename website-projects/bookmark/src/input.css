@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  /* Breakpoints (px → rem) */
+  --breakpoint-sm: 30rem; /* 480px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 63.75rem; /* 1020px */
+  --breakpoint-xl: 90rem; /* 1440px */
+
+  /* Colors */
+  --color-soft-blue: hsl(231 69% 60%);
+  --color-soft-red: hsl(0 94% 66%);
+  --color-grayish-blue: hsl(229 8% 60%);
+  --color-very-dark-blue: hsl(229 31% 21%);
+
+  /* Fonts */
+  --font-sans: "Rubik", sans-serif;
+}
+
+@layer utilities {
+  .link-underline {
+    @apply relative transition-colors duration-200;
+  }
+
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.25rem;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: var(--color-soft-red, currentColor);
+    transition: transform 0.25s ease;
+  }
+
+  .link-underline:hover::after,
+  .link-underline:focus-visible::after {
+    transform: scaleX(1);
+  }
+
+  .btn-primary {
+    @apply px-8 py-2 rounded-lg border-2 shadow-md transition-colors transition-transform duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+}

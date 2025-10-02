@@ -1,5 +1,5 @@
 {
-  "name": "Testimonial Grid",
+  "name": "Fylo",
   "private": true,
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
