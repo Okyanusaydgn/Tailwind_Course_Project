@@ -35,10 +35,17 @@
 
   /* Fonts */
   --font-sans: "Rubik", sans-serif;
+
+  /* Background images (paths are relative to dist/output.css) */
+  --image-dots: url("../images/bg-dots.svg");
 }
 
 /* Project utilities/components */
 @layer utilities {
+  .bg-dots {
+    background-image: var(--image-dots);
+  }
+
   /* Blue pill shape behind hero illustration */
   .bg-hero {
     @apply absolute rounded-l-full;
