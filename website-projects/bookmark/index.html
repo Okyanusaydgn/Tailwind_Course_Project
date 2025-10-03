@@ -14,15 +14,13 @@
     <title>Bookmark Website</title>
   </head>
   <body class="overflow-x-hidden">
+    <!-- NAV -->
     <nav class="container relative mx-auto p-6">
-      <!-- Flex Container For Nav Items -->
       <div class="flex items-center justify-between space-x-20 my-6">
-        <!-- Logo -->
         <div class="z-30">
           <img src="images/logo-bookmark.svg" alt="" id="logo" />
         </div>
 
-        <!-- Menu Items -->
         <div
           class="hidden items-center space-x-10 uppercase text-grayish-blue md:flex"
         >
@@ -51,9 +49,8 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section id="hero">
-      <!-- Container For Image & Content -->
       <div
         class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0"
       >
@@ -72,7 +69,6 @@
             free.
           </p>
 
-          <!-- Buttons Container -->
           <div
             class="flex items-center justify-center w-full space-x-4 lg:justify-start"
           >
@@ -104,7 +100,7 @@
       </div>
     </section>
 
-    <!-- Features Heading -->
+    <!-- FEATURES HEADING -->
     <section id="features">
       <div class="container mx-auto mt-16 px-6">
         <h2 class="mb-6 text-4xl font-semibold text-center">Features</h2>
@@ -115,20 +111,22 @@
         </p>
       </div>
     </section>
-    <!-- Features Tabs -->
+
+    <!-- FEATURES TABS -->
     <section id="tabs">
       <!-- Tabs/Panels Container -->
-      <div class="container relative mx-auto my-6 mb-32 mt-12 px-6">
+      <div class="container relative mx-auto my-3 mt-12 px-6 pb-24 lg:pb-24">
         <div
           class="hidden lg:block absolute -z-10 rounded-r-full top-72 w-[2000px] h-[300px] right-[30%] bg-soft-blue"
         ></div>
-        <!-- Tabs Flex Container  -->
+
+        <!-- Tabs -->
         <div
           class="flex flex-col justify-center max-w-xl mx-auto mb-6 border-b md:space-x-10 md:flex-row"
         >
           <!-- Tab 1 -->
           <div
-            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-soft-red md:w-1/3 tab cursor-pointer"
+            class="flex justify-center text-center text-gray-600 border-b border-gray-200 md:border-b-0 hover:text-soft-red md:w-1/3 tab cursor-pointer"
             data-target="panel-1"
           >
             <div class="py-5 border-b-4 border-soft-red" data-target="panel-1">
@@ -138,7 +136,7 @@
 
           <!-- Tab 2 -->
           <div
-            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-soft-red md:w-1/3 tab cursor-pointer"
+            class="flex justify-center text-center text-gray-600 border-b border-gray-200 md:border-b-0 hover:text-soft-red md:w-1/3 tab cursor-pointer"
             data-target="panel-2"
           >
             <div class="py-5" data-target="panel-2">Speedy Searching</div>
@@ -146,16 +144,17 @@
 
           <!-- Tab 3 -->
           <div
-            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-soft-red md:w-1/3 tab cursor-pointer"
+            class="flex justify-center text-center text-gray-600 md:border-b-0 hover:text-soft-red md:w-1/3 tab cursor-pointer"
             data-target="panel-3"
           >
             <div class="py-5" data-target="panel-3">Easy Sharing</div>
           </div>
         </div>
+
         <!-- Tab Panels -->
         <div
           id="panels"
-          class="container mx-auto relative min-h-[560px] md:min-h-[420px]"
+          class="container mx-auto relative min-h-[640px] md:min-h-[520px]"
         >
           <!-- Panel 1 -->
           <div
@@ -163,11 +162,13 @@
             class="flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1"
           >
             <!-- Panel Image -->
-            <div class="flex justify-center md:w-1/2">
+            <div class="flex justify-center items-center md:w-1/2">
               <img
                 src="images/illustration-features-tab-1.svg"
+                width="520"
+                height="400"
                 alt=""
-                class="relative z-10"
+                class="relative z-10 h-[360px] md:h-[380px] lg:h-[400px] w-auto max-w-full object-contain"
               />
             </div>
             <!-- Panel Content -->
@@ -192,17 +193,21 @@
             </div>
           </div>
 
-          <!-- Panel 2  -->
+          <!-- Panel 2 -->
           <div
             id="panel-2"
             class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel panel-2"
           >
             <!-- Panel Image -->
-            <div class="flex justify-center md:w-1/2">
+            <div class="flex justify-center items-center md:w-1/2">
               <img
                 src="images/illustration-features-tab-2.svg"
+                width="520"
+                height="400"
+                loading="lazy"
+                decoding="async"
                 alt=""
-                class="relative z-10"
+                class="relative z-10 h-[360px] md:h-[380px] lg:h-[400px] w-auto max-w-full object-contain"
               />
             </div>
             <!-- Panel Content -->
@@ -226,17 +231,21 @@
             </div>
           </div>
 
-          <!-- Panel 3  -->
+          <!-- Panel 3 -->
           <div
             id="panel-3"
             class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel panel-3"
           >
             <!-- Panel Image -->
-            <div class="flex justify-center md:w-1/2">
+            <div class="flex justify-center items-center md:w-1/2">
               <img
                 src="images/illustration-features-tab-3.svg"
+                width="520"
+                height="400"
+                loading="lazy"
+                decoding="async"
                 alt=""
-                class="relative z-10"
+                class="relative z-10 h-[360px] md:h-[380px] lg:h-[400px] w-auto max-w-full object-contain"
               />
             </div>
             <!-- Panel Content -->
@@ -263,7 +272,7 @@
       </div>
     </section>
 
-    <!-- Download Heading -->
+    <!-- DOWNLOAD HEADING -->
     <section id="download">
       <div class="container mx-auto px-6">
         <h2 class="mb-6 text-3xl font-semibold text-center md:text-4xl">
@@ -276,9 +285,8 @@
       </div>
     </section>
 
-    <!-- Download Boxes -->
-    <section id="download" class="py-32">
-      <!-- Boxes Container -->
+    <!-- DOWNLOAD BOXES (unique id to avoid duplicate) -->
+    <section id="download-boxes" class="py-32">
       <div
         class="relative flex flex-col items-center max-w-5xl mx-auto space-y-10 px-10 md:px-6 md:space-y-0 md:space-x-7 md:flex-row"
       >
@@ -286,7 +294,6 @@
         <div
           class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:w-1/3"
         >
-          <!-- Image -->
           <div class="flex justify-center">
             <img
               src="images/logo-chrome.svg"
@@ -295,11 +302,8 @@
               decoding="async"
             />
           </div>
-          <!-- Text -->
           <h5 class="pt-6 text-xl font-bold">Add to Chrome</h5>
           <p class="text-gray-400">Minimum Version 62</p>
-
-          <!-- Dots -->
           <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
             <a
               href="#"
@@ -315,7 +319,6 @@
           <div
             class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:mt-8"
           >
-            <!-- Image -->
             <div class="flex justify-center">
               <img
                 src="images/logo-firefox.svg"
@@ -324,11 +327,8 @@
                 decoding="async"
               />
             </div>
-            <!-- Text -->
             <h5 class="pt-6 text-xl font-bold">Add to Firefox</h5>
             <p class="text-gray-400">Minimum Version 55</p>
-
-            <!-- Dots -->
             <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
               <a
                 href="#"
@@ -345,7 +345,6 @@
           <div
             class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:mt-16"
           >
-            <!-- Image -->
             <div class="flex justify-center">
               <img
                 src="images/logo-opera.svg"
@@ -354,11 +353,8 @@
                 decoding="async"
               />
             </div>
-            <!-- Text -->
             <h5 class="pt-6 text-xl font-bold">Add to Opera</h5>
             <p class="text-gray-400">Minimum Version 46</p>
-
-            <!-- Dots -->
             <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
               <a
                 href="#"
@@ -366,6 +362,185 @@
                 class="block w-full py-3 text-white border-2 rounded-lg bg-soft-blue border-soft-blue transition-colors transition-transform duration-200 hover:text-soft-blue hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-soft-blue/60 hover:-translate-y-0.5 active:translate-y-0"
                 >Add & Install Extension</a
               >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Heading -->
+    <section id="faq">
+      <div class="container mx-auto">
+        <h2 class="mb-6 text-3xl font-semibold text-center md:text-4xl">
+          Frequently Asked Questions
+        </h2>
+        <p class="max-w-lg px-6 mx-auto text-center text-graishBlue">
+          Here are some of our FAQs. If you have any other questions you'd like
+          answered please feel free to email us.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Heading -->
+    <section id="faq">
+      <div class="container mx-auto">
+        <h2 class="mb-6 text-3xl font-semibold text-center md:text-4xl">
+          Frequently Asked Questions
+        </h2>
+        <p class="max-w-lg px-6 mx-auto text-center text-grayish-blue">
+          Here are some of our FAQs. If you have any other questions you'd like
+          answered please feel free to email us.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq-accordion">
+      <div class="container mx-auto px-6 mb-32">
+        <div class="max-w-2xl m-8 mx-auto overflow-hidden">
+          <!-- Item 1 -->
+          <div class="py-1 border-b outline-none group">
+            <!-- Header Row (focusable) -->
+            <div
+              tabindex="0"
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer ease select-none"
+            >
+              <div
+                class="transition duration-500 ease group-hover:text-red-500"
+              >
+                What is Bookmark?
+              </div>
+              <div
+                class="transition-transform duration-700 ease-in-out group-focus-within:-rotate-180 group-hover:text-red-500"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- Content (smooth) -->
+            <div
+              class="grid grid-rows-[0fr] group-focus-within:grid-rows-[1fr] transition-all duration-1000 ease-[cubic-bezier(.22,1,.36,1)]"
+            >
+              <div class="overflow-hidden">
+                <p class="py-2 text-justify text-gray-400">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat, repellat amet doloribus consequuntur eos similique
+                  provident tempora voluptates iure quia fuga dicta voluptatibus
+                  culpa mollitia recusandae delectus id suscipit labore?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="py-1 border-b outline-none group">
+            <div
+              tabindex="0"
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer ease select-none"
+            >
+              <div
+                class="transition duration-500 ease group-hover:text-red-500"
+              >
+                How can I request a new browser?
+              </div>
+              <div
+                class="transition-transform duration-700 ease-in-out group-focus-within:-rotate-180 group-hover:text-red-500"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="grid grid-rows-[0fr] group-focus-within:grid-rows-[1fr] transition-all duration-1000 ease-[cubic-bezier(.22,1,.36,1)]"
+            >
+              <div class="overflow-hidden">
+                <p class="py-2 text-justify text-gray-400">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat, repellat amet doloribus consequuntur…
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="py-1 border-b outline-none group">
+            <div
+              tabindex="0"
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer ease select-none"
+            >
+              <div
+                class="transition duration-500 ease group-hover:text-red-500"
+              >
+                Is there a mobile app?
+              </div>
+              <div
+                class="transition-transform duration-700 ease-in-out group-focus-within:-rotate-180 group-hover:text-red-500"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="grid grid-rows-[0fr] group-focus-within:grid-rows-[1fr] transition-all duration-1000 ease-[cubic-bezier(.22,1,.36,1)]"
+            >
+              <div class="overflow-hidden">
+                <p class="py-2 text-justify text-gray-400">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. …
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="py-1 border-b outline-none group">
+            <div
+              tabindex="0"
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer ease select-none"
+            >
+              <div
+                class="transition duration-500 ease group-hover:text-red-500"
+              >
+                What about other Chromium browsers?
+              </div>
+              <div
+                class="transition-transform duration-700 ease-in-out group-focus-within:-rotate-180 group-hover:text-red-500"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="grid grid-rows-[0fr] group-focus-within:grid-rows-[1fr] transition-all duration-1000 ease-[cubic-bezier(.22,1,.36,1)]"
+            >
+              <div class="overflow-hidden">
+                <p class="py-2 text-justify text-gray-400">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. …
+                </p>
+              </div>
             </div>
           </div>
         </div>
