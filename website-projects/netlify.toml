@@ -1,0 +1,7 @@
+[build]
+  base = "website-projects/loopstudios"
+  command = "npm ci && npm run build"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
