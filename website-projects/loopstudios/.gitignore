@@ -2,6 +2,5 @@
 node_modules/
 
 # derlenmiş çıktılar
-
 *.log
 .DS_Store
