@@ -42,6 +42,13 @@
 
 /* Project utilities/components */
 @layer utilities {
+  .ficon {
+    transition: filter 200ms ease, transform 200ms ease;
+  }
+  .ficon:hover {
+    transform: translateY(-1px) scale(1.05);
+  }
+
   .bg-dots {
     background-image: var(--image-dots);
   }

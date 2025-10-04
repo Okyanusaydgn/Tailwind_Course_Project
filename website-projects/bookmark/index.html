@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -374,19 +374,6 @@
         <h2 class="mb-6 text-3xl font-semibold text-center md:text-4xl">
           Frequently Asked Questions
         </h2>
-        <p class="max-w-lg px-6 mx-auto text-center text-graishBlue">
-          Here are some of our FAQs. If you have any other questions you'd like
-          answered please feel free to email us.
-        </p>
-      </div>
-    </section>
-
-    <!-- FAQ Heading -->
-    <section id="faq">
-      <div class="container mx-auto">
-        <h2 class="mb-6 text-3xl font-semibold text-center md:text-4xl">
-          Frequently Asked Questions
-        </h2>
         <p class="max-w-lg px-6 mx-auto text-center text-grayish-blue">
           Here are some of our FAQs. If you have any other questions you'd like
           answered please feel free to email us.
@@ -546,5 +533,115 @@
         </div>
       </div>
     </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="bg-soft-blue">
+      <!-- Main Container -->
+      <div class="max-wlg mx-auto py-24">
+        <p
+          class="mb-6 text-lg tracking-widest text-center text-white uppercase"
+        >
+          35,000+ Already Joined
+        </p>
+        <h2
+          class="px-3 mb-6 text-3xl font-semibold text-center text-white md:text-4xl"
+        >
+          Stay up-to-date with what we're doing
+        </h2>
+
+        <!-- Form -->
+        <form
+          class="flex flex-col items-start justify-center max-w-2xl mx-auto space-y-6 text-base px-6 md:flex-row md:space-y-0 md:space-x-4 md:px-0"
+        >
+          <!-- Input & Button Container -->
+          <div
+            class="group flex flex-col justify-between items-center mx-auto md:flex-row md:mx-0 rounded-2xl transition-shadow focus-within:ring-2 focus-within:ring-soft-red/40 focus-within:shadow-lg"
+          >
+            <input
+              type="email"
+              class="w-full md:w-80 px-6 py-3 mb-4 rounded-lg border border-gray-300 bg-white placeholder-gray-400 focus:outline-none focus:border-soft-red focus:ring-4 focus:ring-soft-red/20 transition md:mr-3 md:mb-0"
+              placeholder="Enter your email address"
+              aria-label="Email address"
+            />
+
+            <!-- SUBMIT: input yerine button (shine efekti için iç span gerekiyor) -->
+            <button
+              type="submit"
+              class="relative inline-flex items-center justify-center px-6 py-3 font-semibold text-white rounded-lg cursor-pointer bg-soft-red shadow-md transition hover:shadow-lg hover:-translate-y-0.5 active:translate-y-[1px] active:scale-[0.98] focus:outline-none overflow-hidden"
+            >
+              <span class="pointer-events-none">Contact Us</span>
+              <!-- Shine şeridi -->
+              <span
+                class="absolute inset-0 -skew-x-12 translate-x-[-150%] bg-white/25 transition-transform duration-700 ease-out group-hover:translate-x-[150%]"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="relative py-16 bg-very-dark-blue text-grayish-blue">
+      <!-- Üstte 1px gradient ayırıcı -->
+      <div
+        class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-soft-red/70 via-white/10 to-transparent"
+      ></div>
+
+      <!-- Footer Flex Container -->
+      <div
+        class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
+      >
+        <!-- Logo/Menu Container -->
+        <div
+          class="flex flex-col items-center justify-between md:flex-row text-lg font-light space-y-8 md:space-y-0 md:space-x-14"
+        >
+          <img
+            src="images/logo-bookmark-footer.svg"
+            alt="Bookmark"
+            class="mb-1"
+          />
+
+          <!-- Link underline animasyonu -->
+          <a
+            href="#features"
+            class="relative uppercase hover:text-soft-red transition after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-soft-red after:transition-all after:duration-300 hover:after:w-full"
+          >
+            Features
+          </a>
+          <a
+            href="#download"
+            class="relative uppercase hover:text-soft-red transition after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-soft-red after:transition-all after:duration-300 hover:after:w-full"
+          >
+            Download
+          </a>
+          <a
+            href="#faq"
+            class="relative uppercase hover:text-soft-red transition after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-soft-red after:transition-all after:duration-300 hover:after:w-full"
+          >
+            FAQ
+          </a>
+        </div>
+
+        <!-- Social Container -->
+        <div class="flex items-center gap-4 md:gap-6">
+          <!-- Yuvarlak kapsül + erişilebilirlik -->
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="group inline-grid h-10 w-10 place-items-center rounded-full ring-1 ring-white/10 hover:ring-soft-red/60 transition-transform hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-soft-red/60"
+          >
+            <img src="images/icon-facebook.svg" alt="" class="h-5 ficon" />
+          </a>
+
+          <a
+            href="#"
+            aria-label="Twitter"
+            class="group inline-grid h-10 w-10 place-items-center rounded-full ring-1 ring-white/10 hover:ring-soft-red/60 transition-transform hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-soft-red/60"
+          >
+            <img src="images/icon-twitter.svg" alt="" class="h-5 ficon" />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
